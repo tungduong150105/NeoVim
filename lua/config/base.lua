@@ -7,7 +7,7 @@ vim.opt.showmode = true
 
 -- Set tabs to 2 spaces
 vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 -- Enable auto indenting and set its to spaces
