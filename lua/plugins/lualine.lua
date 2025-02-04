@@ -5,13 +5,19 @@ return {
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,
-				theme = "solarized_dark",
-				component_separators = { left = "", right = "" },
-				section_separators = { left = "", right = "" },
+				theme = "solarized",
+				component_separators = { left = " ", right = " " },
+				section_separators = { left = " ", right = " " },
 				disabled_filetypes = {},
 			},
+			disabled_filetypes = {},
 			sections = {
-				lualine_a = { "mode" },
+				lualine_a = {
+					{
+						"mode",
+						icon = "",
+					},
+				},
 				lualine_b = { "branch" },
 				lualine_c = {
 					{

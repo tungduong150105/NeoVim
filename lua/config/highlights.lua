@@ -1,5 +1,5 @@
 -- Highlight cursor line
-vim.opt.cursorline = true
+-- vim.opt.cursorline = true
 
 -- Enable 24-bit colors
 vim.opt.termguicolors = true

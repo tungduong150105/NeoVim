@@ -20,7 +20,7 @@ return {
 					" ",
 					{ filename, gui = modified and "bold,italic" or "bold" },
 					" ",
-					guibg = "#44406e",
+					guibg = "#5419CB",
 				}
 			end,
 		})

@@ -13,6 +13,7 @@ return {
 				"css",
 				"html",
 				"lua",
+				"ruby",
 			},
 			highlight = {
 				enable = true,
