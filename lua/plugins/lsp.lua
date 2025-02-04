@@ -25,6 +25,13 @@ return {
 				"<C-f>",
 				"<cmd>lua vim.diagnostic.open_float()<CR>",
 			},
+			{
+				"gd",
+				function()
+					vim.cmd([[vsplit]])
+					vim.lsp.buf.definition()
+				end,
+			},
 		},
 
 		opts = {
