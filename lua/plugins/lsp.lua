@@ -12,6 +12,7 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"ts_ls",
+					"ruby_lsp",
 				},
 			})
 		end,
@@ -19,20 +20,6 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = { "saghen/blink.cmp" },
-
-		keys = {
-			{
-				"<C-f>",
-				"<cmd>lua vim.diagnostic.open_float()<CR>",
-			},
-			{
-				"gd",
-				function()
-					vim.cmd([[vsplit]])
-					vim.lsp.buf.definition()
-				end,
-			},
-		},
 
 		opts = {
 			servers = {
@@ -46,6 +33,7 @@ return {
 					},
 				},
 				ts_ls = {},
+				ruby_lsp = {},
 			},
 		},
 		config = function(_, opts)

@@ -13,6 +13,16 @@ return {
 					show_start = false,
 					show_end = false,
 				},
+				exclude = {
+					filetypes = {
+						"lazy",
+						"help",
+						"mason",
+						"notify",
+						"dashboard",
+						"snacks_dashboard",
+					},
+				},
 			})
 		end,
 	},
@@ -28,9 +38,18 @@ return {
 						"lazy",
 						"mason",
 						"notify",
+						"dashboard",
+						"snacks_dashboard",
 					},
 					callback = function()
 						vim.b.miniindentscope_disable = true
+					end,
+				}),
+
+				vim.api.nvim_create_autocmd("User", {
+					pattern = "SnacksDashboardOpened",
+					callback = function(data)
+						vim.b[data.buf].miniindentscope_disable = true
 					end,
 				}),
 			})
