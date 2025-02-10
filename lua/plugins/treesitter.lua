@@ -14,6 +14,7 @@ return {
 				"html",
 				"lua",
 				"ruby",
+				"cpp",
 			},
 			highlight = {
 				enable = true,

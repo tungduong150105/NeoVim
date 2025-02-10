@@ -8,6 +8,7 @@ return {
 				typescript = { "prettierd" },
 				javascriptreact = { "prettierd" },
 				typescriptreact = { "prettierd" },
+				cpp = { "clang-format" },
 			},
 		})
 

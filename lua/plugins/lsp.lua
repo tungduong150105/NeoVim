@@ -13,6 +13,7 @@ return {
 					"lua_ls",
 					"ts_ls",
 					"ruby_lsp",
+					"clangd",
 				},
 			})
 		end,
@@ -34,6 +35,7 @@ return {
 				},
 				ts_ls = {},
 				ruby_lsp = {},
+				clangd = {},
 			},
 		},
 		config = function(_, opts)
