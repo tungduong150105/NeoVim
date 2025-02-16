@@ -9,6 +9,7 @@ return {
 				javascriptreact = { "prettierd" },
 				typescriptreact = { "prettierd" },
 				cpp = { "clang-format" },
+				ruby = { "rubyfmt" },
 			},
 		})
 
