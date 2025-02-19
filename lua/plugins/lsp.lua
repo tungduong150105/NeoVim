@@ -14,6 +14,7 @@ return {
 					"ts_ls",
 					"ruby_lsp",
 					"clangd",
+					"rubocop",
 				},
 			})
 		end,
@@ -36,6 +37,7 @@ return {
 				ts_ls = {},
 				ruby_lsp = {},
 				clangd = {},
+				rubocop = {},
 			},
 		},
 		config = function(_, opts)
