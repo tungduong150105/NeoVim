@@ -1,5 +1,11 @@
 return {
 	{
+		"saghen/blink.compat",
+		version = "*",
+		lazy = true,
+		opts = {},
+	},
+	{
 		"saghen/blink.cmp",
 		dependencies = {
 			"rafamadriz/friendly-snippets",
@@ -74,7 +80,6 @@ return {
 					Copilot = "",
 				},
 			})
-
 			vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
 		end,
 	},
