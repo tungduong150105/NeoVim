@@ -15,6 +15,7 @@ return {
 				"lua",
 				"ruby",
 				"cpp",
+				"java",
 			},
 			highlight = {
 				enable = true,

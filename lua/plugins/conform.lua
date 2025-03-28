@@ -11,6 +11,7 @@ return {
 				cpp = { "clang-format" },
 				-- ruby = { "rubyfmt" },
 				ruby = { "rubocop" },
+				java = { "clang-format" },
 			},
 		})
 
