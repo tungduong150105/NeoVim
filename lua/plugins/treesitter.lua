@@ -17,6 +17,7 @@ return {
 				"cpp",
 				"java",
 			},
+			auto_install = true,
 			highlight = {
 				enable = true,
 				use_languagetree = true,

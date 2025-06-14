@@ -35,7 +35,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Enable mouse mode
-vim.opt.mouse = "a"
+-- vim.opt.mouse = "a"
 
 -- Enable ingnorecase and smartcase
 vim.opt.ignorecase = true

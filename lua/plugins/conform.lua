@@ -4,16 +4,23 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				javascript = { "prettier" },
-				typescript = { "prettier" },
-				javascriptreact = { "prettier" },
-				typescriptreact = { "prettier" },
+				javascript = { "prettierd" },
+				typescript = { "prettierd" },
+				javascriptreact = { "prettierd" },
+				typescriptreact = { "prettierd" },
 				cpp = { "clang-format" },
+				-- cpp = { "astyle" },
 				-- ruby = { "rubyfmt" },
 				ruby = { "rubocop" },
 				java = { "clang-format" },
 			},
 		})
+
+		require("conform").formatters.astyle = {
+			env = {
+				ASTYLE_CONFIG = vim.fn.expand("~/.astylerc"),
+			},
+		}
 
 		vim.api.nvim_create_autocmd("BufWritePre", {
 			pattern = "*",

@@ -1,4 +1,12 @@
 return {
+	-- "navarasu/onedark.nvim",
+	-- config = function()
+	-- 	require("onedark").setup({
+	-- 		transparent = true,
+	-- 		style = "darker",
+	-- 	})
+	-- 	require("onedark").load()
+	-- end,
 	"craftzdog/solarized-osaka.nvim",
 	lazy = false,
 	priority = 1000,
